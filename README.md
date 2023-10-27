@@ -1,0 +1,4 @@
+# counter
+This project is part of Start-2-Impact second Module on JavaScript Basics. The goal is to create a counter that increases or decreases by one the rolling of numbers. I will create two options: either click on the '+' and '-' buttons or use the up and down keys on the keypad. 
+On one last note, I know it took me a while to complete this module but I am for starters a perfectionist, meaning that I didn't want to sign it off as complete as long as I was not sure that I could understand JavaScript, but especially I got a new job. A new job in tech!!! I have been working for the past 5 months as a ServiceNow Developer, working on the development and customization of the platform according to the company's needs and demands. I love it. And I know that had it not been for S-2-I, it would not have been possible in such a short period of time. 
+So thank you, I hope you will enjoy counting one-by-one :D Cheers, Sara
