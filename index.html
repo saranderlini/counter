@@ -8,25 +8,33 @@
     <title>Counter</title>
 </head>
 <body>
-    <div class="main-box">
-        <div class="main-title">
-            <h1>Counter</h1>
-        </div>
-        <div class="content-box">
-            <p class="intro">
-                If you have always been interested in knowing what's the result of 4623874692 - 1, well, glad to tell you that you are in right place! <br>
-                Here we will learn the result of adding and subtracting 1. Let's get started!
-            </p>
-            <div class="counter-box">
-                <input type="" value="">
-                <div class="counter-ctrls">
-                    <button class="btnPlus">+</button>
-                    <button class="btnMinus">-</button>
-                    <button class="btnReset">Reset</button>
-                </div>
+    <div class="top-row container-fluid"></div>
+    <div class="container d-flex ">
+        <div class="col-2"></div>
+        <div class="main d-flex flex-column col-8 border py-3">
+            
+            <div class="main-title py-3 justify-content-around text-center">
+                <h1 class="text-white-50">Counter</h1>
             </div>
+            <div class="content-box container">
+                <p class="lead text-white-50">
+                    If you have always been interested in knowing what's the result of 4623874692 - 1, well, glad to tell you that you are in right place! <br>
+                    Here we will learn the result of adding and subtracting 1. Let's get started!
+                </p>
+                <button type="button" id="btn-start" class="btn d-block m-auto col-4 btn-default text-black-50">Start</button>
+                <div id="btn-div" class="">
+                    <div id="resultDiv" class="border col-4 m-auto text-white-50">0</div>
+                    <div class="counter-ctrls d-flex justify-content-center">
+                        <button id="btnPlus" type="button" class="btnPlus btn btn-default col-2 px-5  text-white-50">+</button>
+                        <button id="btnMinus" type="button" class="btnMinus btn btn-default col-2 px-5 text-white-50">-</button>
+                        <button id="btnReset" type="button" class="btnReset btn col-2 btn-default  text-white-50">Reset</button>
+                    </div>
+                </div>
         </div>
     </div>
+    <div class="col-2"></div>
+</div>
+<div class="bottom-row container-fluid row"></div>
     <script src="asset/js/script.js"></script>
 </body>
 </html>

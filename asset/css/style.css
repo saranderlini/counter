@@ -1,1 +1,1 @@
-p{font-style:oblique}
+body{background-image:url("/asset/img/bg-layered.svg");background-repeat:no-repeat;background-size:cover}body .top-row{height:10%}body .main{border-radius:25px;background:rgba(153,153,153,.1);backdrop-filter:blur(10px)}body .bottom-row{height:10%;position:absolute;bottom:0}

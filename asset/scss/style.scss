@@ -1,3 +1,3 @@
-p {
-    font-style: oblique;
-}
+@use "setup";
+@use "colors";
+@use "mixins";
