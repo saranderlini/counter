@@ -5,20 +5,24 @@ var btnPlus = document.querySelector('button#btnPlus');
 var btnMinus = document.querySelector('button#btnMinus');
 var btnReset = document.querySelector('button#btnReset');
 
+var countCont = document.getElementsByClassName('countCont');
+
 //Declaring var for collapsing and functions
 var leadCap = document.querySelector('p#lead');
 function collapseFunc() {
-    resultDiv.style.visibility = 'visible';
-    resultDiv.style.height = 'fit-content';
-    btnMinus.style.height = 'fit-content';
-    btnMinus.style.visibility = 'visible';
-    btnReset.style.height = 'fit-content';
-    btnReset.style.visibility = 'visible';
-    btnPlus.style.height = 'fit-content';
-    btnPlus.style.visibility = 'visible';
+    btnStart.style.height = '0';
+    btnStart.style.visibility = 'collapse';
+    
     leadCap.style.display = 'none';
-    btnStart.style.display = 'none';
+    if(countCont) {
+        for(var i = 0; i<= countCont.length; i++) {
+            countCont[i].style.visibility = 'visible';
+            countCont[i].style.height = 'fit-content';            
+        }
+    }
+//    btnStart.style.visibility = 'collapse';
 }
+
 btnStart.addEventListener('click', collapseFunc);
 
 

@@ -1,28 +1,26 @@
-body {
-    // Setting of background
+.background {
+    // Setting of background    
     background-image: url('/asset/img/bg-layered.svg');
     background-repeat: no-repeat;
     background-size: cover;
 
-    .top-row {
-        height: 10%;
-    }
-    .bottom-row {
-        height: 10%;
-        position: absolute;
-        bottom: 0;
-    }
-
     .main {
-        
         border-radius: 25px;
         background: hsla(0, 0%, 60%, 0.10);
         backdrop-filter: blur(10px);
-            #resultDiv, #btnPlus, #btnMinus, #btnReset {
+        font-family: 'Share Tech Mono', monospace;
+            .countCont {
                 visibility: collapse;
                 height: 0;
             }
-        
+            #resultDiv {
+                font-size: 4rem;
+            }
+            .btn:hover, .btn:focus, .btn:focus-visible {
+                background-color: $bg_blue;
+                box-shadow: none;
+                color: $black;
+            }
     }
     
 }
