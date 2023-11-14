@@ -1,15 +1,36 @@
 .background {
-    // Setting of background    
+    // Setting of background   
+    height: 100vh;
+    width: 100vw;
     background-image: url('../../asset/img/bg-layered.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    background-position: center;
     
+    /*
+    .background::before {
+        content: '';
+        position: fixed;
+        display: block;
+        z-index: -1;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background-image: url('../../asset/img/bg-layered.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    */
     .main {
         border-radius: 25px;
         background: hsla(0, 0%, 60%, 0.10);
         backdrop-filter: blur(10px);
         font-family: 'Share Tech Mono', monospace;
         font-size: 1rem;
+        position: relative;
         .hidden {
             display: none;
         }
@@ -23,6 +44,7 @@
         .btn {
             color: rgba(255,255,255,.5);
             font-size: 1.35rem;
+
         }
         .btn:hover, .btn:focus, .btn:focus-visible, .btnDisabled {
             background-color: #333043a7;
@@ -30,7 +52,9 @@
             color: #9991f8;
         }
         //Counter Div
-        #btnEx {
+        #btnInstruction, #btn-start, #home, #btnEx {
+            backdrop-filter: blur(5px);
+            background: hsla(0, 0%, 60%, 0.10);
             color: rgba(228, 226, 226, 0.84);
             &:hover {
                 color: #9991f8;
@@ -38,7 +62,7 @@
         }
         #result {
             color: #8c84e1;
-            font-size: 8rem;
+            font-size: 6rem;
         }
     }
 }
