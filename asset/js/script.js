@@ -1,20 +1,43 @@
-//Declaring variables
+let homeDiv = document.getElementById('firstDiv');
+btnFirst = document.getElementById('btnInstruction');
+btnFirst.classList.toggle('d-block');
+let instructionDiv = document.getElementById('instruction-div');
+let btnStart = document.getElementById('btn-start');
+let counterDiv = document.getElementById('counter-div');
+let btnHome = document.getElementById('home');
+let btnEx = document.getElementById('btnEx');
+let result = document.getElementById('result');
+let btnPlus = document.getElementById('btnPlus');
+let btnMinus = document.getElementById('btnMinus');
+let btnReset = document.getElementById('btnReset');
+
+//Script for displaying the different sections
+function hideFirst() {
+    homeDiv.style.display = 'none';
+    btnFirst.classList.toggle('d-block', false);
+    btnFirst.classList.toggle('none', true);
+    instructionDiv.style.display = 'block';
+}
+
+btnFirst.addEventListener('click', hideFirst);
 
 
-var title = document.getElementById('title');
-let homeDiv = document.querySelector('.home-div');
-let btnInstruction = document.getElementById('btn-instruction');
-var instructionDiv = document.getElementById('instruction-div');
+function hideSecond() {
+    instructionDiv.style.display= 'none';
+    counterDiv.style.display = 'block';
+}
+btnStart.addEventListener('click', hideSecond);
+
+function backHome() {
+    counterDiv.style.display = 'none';
+    homeDiv.style.display = 'block';
+    btnFirst.classList.toggle('d-block', true);
+}
+
+btnHome.addEventListener('click', backHome);
 
 
-var btnEx = document.getElementById('btnEx');
-var btnStart = document.getElementById('btn-start');
-var btnDiv = document.getElementById('btn-div');
-var resultDiv = document.getElementById('resultDiv');
-var btnPlus = document.getElementById('btnPlus');
-var btnMinus = document.getElementById('btnMinus');
-var btnReset = document.getElementById('btnReset');
-var countCont = document.getElementsByClassName('countCont');
+//Script for mathematical operations
 var pointZero = 0;
 var output;
 
@@ -22,14 +45,14 @@ var output;
 // Function for adding one
 function addOne() {
     output = pointZero += 1;
-    resultDiv.innerHTML = output;
+    result.innerHTML = output;
     return output;
 }
 
 //Function for subtracting
 function minusOne() {
     output = pointZero -= 1;
-    resultDiv.innerHTML = output;
+    result.innerHTML = output;
     return output;
 }
 //Associating the sum to the + button
@@ -43,7 +66,7 @@ btnReset.addEventListener('click', resetFunc);
 
 function resetFunc() {
     pointZero = 0;
-    resultDiv.innerHTML = pointZero;
+    result.innerHTML = pointZero;
     return pointZero;
 }
 
@@ -66,7 +89,7 @@ document.onkeydown = function(e) {
 
 function mathEx() {
     pointZero = 4623874692;
-    resultDiv.innerHTML = pointZero;
+    result.innerHTML = pointZero;
     return pointZero;
 }
 
