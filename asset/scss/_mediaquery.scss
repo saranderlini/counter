@@ -1,0 +1,81 @@
+@media only screen and (min-width: 576px) {
+    .main {
+        font-size: 1.3rem;
+        #title {
+            font-size: 2.3rem;
+        }
+        .btn {
+            font-size: 1.1rem;
+        }
+        #result {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        font-size: 1.4rem;
+        #title {
+            font-size: 2.4rem;
+        }
+        .btn {
+            font-size: 1.2rem;
+        }
+        #result {
+            font-size: 1.9rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        font-size: 1.4rem;
+        #title {
+            font-size: 2.5rem;
+        }
+        .btn {
+            font-size: 1.2rem;
+        }
+        #result {
+            font-size: 1.9rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        font-size: 1.5rem;
+        #title {
+            font-size: 2.6rem;
+        }
+        .btn {
+            font-size: 1.3rem;
+        }
+        #result {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main {
+        font-size: 1.5rem;
+        #title {
+            font-size: 2.6rem;
+        }
+        .btn {
+            font-size: 1.3rem;
+        }
+        #result {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .main {
+        margin-top: 15rem;
+        margin-bottom: 3rem;
+    }
+}

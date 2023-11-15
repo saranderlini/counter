@@ -2,9 +2,7 @@
 
 
 var title = document.getElementById('title');
-//var leadCap = document.getElementById('lead');
-
-let lead = document.querySelector('.lead');
+let homeDiv = document.querySelector('.home-div');
 let btnInstruction = document.getElementById('btn-instruction');
 var instructionDiv = document.getElementById('instruction-div');
 
@@ -17,63 +15,6 @@ var btnPlus = document.getElementById('btnPlus');
 var btnMinus = document.getElementById('btnMinus');
 var btnReset = document.getElementById('btnReset');
 var countCont = document.getElementsByClassName('countCont');
-
-
-
-//Declaring for showing of instruction div
-/*
-function showInstruction() {
-//    leadCap.style.display = 'none';
-    btnInstruction.style.height = '0';
-    btnInstruction.style.visibility = 'collapse';
-    btnInstruction.style.padding = '0';
-
-    instructionDiv.style.height = 'fit-content';
-    instructionDiv.style.visibility = 'visible';
-    instructionDiv.style.display = 'block';
-    instructionDiv.style.color = 'rgba(255,255,255,.5)';
-
-
-    btnStart.style.visibility = 'visible';
-    btnStart.style.height = 'fit-content';
-    btnStart.style.marginTop = '0.5rem';
-
-}
-
-
-btnInstruction.addEventListener('click', showInstruction);
-*/
-
-
-
-//Declaring var for collapsing and functions
-
-/*
-function collapseFunc() {
-    
-    instructionDiv.style.display = 'none';
-    btnStart.style.height = '0';
-    btnStart.style.visibility = 'collapse';
-    btnStart.style.padding = '0';
-
-    title.style.fontSize = '1.75rem';
-    btnDiv.style.height = 'fit-content';
-    resultDiv.style.fontSize = '6rem'; 
-    resultDiv.style.padding = '1rem';
-    btnEx.style.fontSize = '1.1rem';
-    btnEx.style.marginBottom = '0.2rem';
-
-    if(countCont) {
-        for(var i = 0; i<= countCont.length; i++) {
-            countCont[i].style.visibility = 'visible';
-            countCont[i].style.height = 'fit-content';
-        }
-    }
-}
-
-btnStart.addEventListener('click', collapseFunc);
-*/
-
 var pointZero = 0;
 var output;
 
