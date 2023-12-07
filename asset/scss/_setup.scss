@@ -27,16 +27,13 @@
 
 
         //Counter Div
-        #btnInstruction, #btn-start, #home, #btnEx {
+        // #btnInstruction, #btn-start, #home, #btnEx 
+        .btnNext {
             backdrop-filter: blur(5px);
-            background: hsla(0, 0%, 60%, 0.10);
+            -webkit-backdrop-filter: blur(5px);
             color: rgba(228, 226, 226, 0.84);
             &:hover {
                 color: #9991f8;
             }
-        }
-        #result {
-            color: #8c84e1;
-            font-size: 1.5rem;
         }
     }
