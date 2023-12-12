@@ -1,6 +1,6 @@
 //Script for mathematical operations
 
-//get all the btns excepted the last one
+//get all the btns other than the last one
 const allButLastBtns = Array.from(counterBtns).slice(0, -1);
 var pointZero = 0;
 var output;
