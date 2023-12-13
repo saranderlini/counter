@@ -2,8 +2,7 @@
 
 //get all the btns other than the last one
 const allButLastBtns = Array.from(counterBtns).slice(0, -1);
-var pointZero = 0;
-var output;
+let pointZero = 0;
 
 allButLastBtns.forEach((button) => {
     button.addEventListener('click', () => {
@@ -12,15 +11,14 @@ allButLastBtns.forEach((button) => {
         } 
         else if (button.textContent == '+') {
             pointZero += 1;
-        } 
+        }
         else if (button.textContent == '-') {
             pointZero -= 1;
         } 
         else if (button.textContent == 'Take me to 4623874692') {
             pointZero = 4623874692;
-        }  
-        resultPar.textContent = pointZero;
-        return pointZero;
+        }
+        updateResult(); 
     })
 })
 
@@ -35,10 +33,14 @@ document.onkeydown = function (e) {
         case 40:
             pointZero -= 1;
             break;
-            case 82:
-                pointZero = 0;
-                break;
-            }
+        case 82:
+            pointZero = 0;
+            break;
+        }
+    updateResult();
+}
+
+function updateResult(){
     resultPar.textContent = pointZero;
     return pointZero;
-};
+}

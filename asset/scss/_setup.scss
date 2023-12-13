@@ -1,39 +1,39 @@
-    .main {
-        border-radius: 25px;
-        background: hsla(0, 0%, 60%, 0.10);
-        backdrop-filter: blur(13px);
-        -webkit-backdrop-filter: blur(13px);
-        font-family: 'Share Tech Mono', monospace;
-        font-size: 1rem;
-        
-        .hidden {
-            display: none;
-        }
-        #title {
-            text-shadow: 0px 0px 25px #8e85e8;
-            font-size: 2rem;
-        }
+.main {
+    border-radius: 25px;
+    background: $bg-color;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    
+    .hidden {
+        display: none;
+    }
+    #title {
+        text-shadow: 0px 0px 25px $violet;
+        font-size: 2rem;
+    }
 
-        //Common to all buttons
-        .btn {
-            color: rgba(255,255,255,.5);
-            font-size: 0.9rem;
-        }
-        .btn:hover, .btn:focus, .btn:focus-visible, .btnDisabled {
-            background-color: #333043a7;
-            box-shadow: none;
-            color: #9991f8;
-        }
+    //Common to all buttons
+    .btn {
+        color: $btn-color;
+        font-size: 0.9rem;
+    }
+    .btn:hover, .btn:focus, .btn:focus-visible, .btnDisabled {
+        background-color: $bg-btn-hover;
+        box-shadow: none;
+        color: $violet;
+    }
 
 
-        //Counter Div
-        // #btnInstruction, #btn-start, #home, #btnEx 
-        .btnNext {
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            color: rgba(228, 226, 226, 0.84);
-            &:hover {
-                color: #9991f8;
-            }
+    //Counter Div
+    // #btnInstruction, #btn-start, #home, #btnEx 
+    .btnNext {
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        color: $btn-color;
+        &:hover {
+            color: $btn-next;
         }
     }
+}
